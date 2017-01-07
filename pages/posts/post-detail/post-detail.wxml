@@ -1,6 +1,6 @@
 <view class="container">
-  <image class="head-image" src="{{postDetail.headImgSrc}}"></image>
-  <image class="audio" src="/img/music/music-start.png"></image>
+  <image class="head-image" src="{{isMusicPlaying?postDetail.music.imgUrl:postDetail.headImgSrc}}"></image>
+  <image catchtap="onMusicTap" class="audio" src="{{isMusicPlaying?'/img/music/music-stop.png':'/img/music/music-start.png'}}"></image>
   <view class="detail-uInfo">
     <image class="detail-avatar" src="{{postDetail.avatar}}"></image>
     <text class="detail-author">{{postDetail.author}}</text>
@@ -12,7 +12,7 @@
     <view class="detail-tags">
         <image wx:if="{{collected}}" catchtap = "onCollectTap" src="/img/icon/collection.png"></image>
         <image wx:else catchtap = "onCollectTap" src="/img/icon/collection-anti.png"></image>
-        <image src="/img/icon/share.png"></image>
+        <image catchtap="onShareTap" src="/img/icon/share.png"></image>
     </view>
     <view class="detail-line"></view>
   </view>
