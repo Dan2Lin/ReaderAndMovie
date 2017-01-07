@@ -1,0 +1,20 @@
+<view class="container">
+  <image class="head-image" src="{{postDetail.headImgSrc}}"></image>
+  <image class="audio" src="/img/music/music-start.png"></image>
+  <view class="detail-uInfo">
+    <image class="detail-avatar" src="{{postDetail.avatar}}"></image>
+    <text class="detail-author">{{postDetail.author}}</text>
+    <text class="detail-const">发表于</text>
+    <text class="detail-date">{{postDetail.dateTime}}</text>
+  </view>
+  <text class="detail-title">{{postDetail.title}}</text>
+  <view class="detail-tags-line">
+    <view class="detail-tags">
+        <image wx:if="{{collected}}" catchtap = "onCollectTap" src="/img/icon/collection.png"></image>
+        <image wx:else catchtap = "onCollectTap" src="/img/icon/collection-anti.png"></image>
+        <image src="/img/icon/share.png"></image>
+    </view>
+    <view class="detail-line"></view>
+  </view>
+  <text class="detail-content">{{postDetail.detail}}</text>
+</view>

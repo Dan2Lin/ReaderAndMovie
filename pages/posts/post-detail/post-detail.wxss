@@ -1,0 +1,78 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.head-image{
+    width:100%;
+    height: 476rpx;
+}
+.audio{
+    width:102rpx;
+    height:112rpx;
+    position:absolute;
+    left:50%;
+    margin-left:-51rpx;
+    margin-top:180rpx;
+    opacity: 0.6;
+}
+.detail-uInfo{
+    margin-top:20rpx;
+    margin-bottom:30rpx;
+}
+.detail-avatar{
+    width:60rpx;
+    height:60rpx;
+    vertical-align: middle;
+    margin-left:20rpx;
+    margin-right:30rpx;
+}
+.detail-author{
+    font-size: 16px;
+    margin-right: 30rpx;
+    color:#666;
+    vertical-align: middle;
+}
+.detail-const{
+    font-size: 14px;
+    margin-right:40rpx;
+    color:#ccc;
+    vertical-align: middle;
+}
+.detail-date{
+    font-size: 12px;
+    color:#ccc;
+    vertical-align: middle;
+}
+.detail-title{
+    font-size:22px;
+    margin-left: 20rpx;
+    color:#333;
+}
+.detail-tags-line{
+  margin-top:20rpx;
+ }
+ .detail-tags{
+     float: right;
+ }
+.detail-tags image{
+    width:80rpx;
+    height:80rpx;
+    margin-right:30rpx;
+}
+.detail-line{
+    position:relative;
+    width:652rpx;
+    height:2rpx;
+    background: #ddd;
+    top:43rpx;
+    z-index: -99;
+    margin-left: 30rpx;
+    opacity: 0.6;
+}
+.detail-content{
+    font-size:28rpx;
+    color:#333;
+    margin:auto 30rpx;
+    margin-bottom:20rpx;
+    text-align:justify;
+}

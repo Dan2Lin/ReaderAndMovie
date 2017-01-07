@@ -1,0 +1,7 @@
+<view class="container">
+  <image src="/images/avatar.jpg" class="user-avatar"></image>
+  <text class="user-name">Hello <text style="font-size:50rpx;">小 \n 可爱.</text></text>
+  <view class="moto-container" bindtap = "onTap">
+    <text class="moto">开启小程序之旅</text>
+  </view>
+</view>
