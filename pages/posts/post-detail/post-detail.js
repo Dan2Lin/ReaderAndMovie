@@ -23,7 +23,7 @@ Page({
             postsCollect[postId] = false;
             wx.setStorageSync('posts_collect', postsCollect);
         }
-         if(app.globalData.g_isMusicPlaying && app.globalData.g_currentMusicPlaying === that.data.currentId){
+         if(app.globalData.g_isMusicPlaying && app.globalData.g_currentMusicPlaying === this.data.currentPost){
             this.setData({
                 isMusicPlaying:true
             });

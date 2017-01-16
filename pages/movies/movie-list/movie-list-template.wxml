@@ -1,0 +1,15 @@
+<import src="../movie/movie-template.wxml" />
+<template name="movieListTemplate">
+  <view>
+    <view>
+      <text>最近热映</text>
+      <view>
+        <text>更多</text>
+        <image src="/img/icon/arrow-right.png"></image>
+      </view>
+    </view>
+    <template is="movieTemplate" />
+    <template is="movieTemplate" />
+    <template is="movieTemplate" />
+  </view>
+</template>
